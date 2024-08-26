@@ -1,0 +1,147 @@
+ICT LEARNINNG PORTAL
+
+
+this learning pprtal will be used to base our research upon.
+Our research is about using interactive learning portal for students to learn at home. This learning portal is just going to be a prototype to base our research on and will not be a fully
+functional application.
+
+WHAT IS ICT?
+ICT stands for "information communication and technology" 
+and is made as a learning strand in senior highschool
+in san guilliermo national highschool, ict mainly is teached
+to students on how to operate and make use of computer devices
+or other technological devices.
+
+WHY A LEARNING PORTAL?
+Since almost all students these days have a device to
+use for school and our PRACTICAL RESEARCH teacher wants
+us to make a prototype of a leaening portal to base our 
+research on we will be using this learning portal to
+base our research upon.
+
+
+WHAT TO EXPECT IN THIS LEARNING PORTAL?
+You expect to either be educated or be entertained.
+
+
+
+
+CODE
+
+
+#head2{ 
+	width: 130px; 
+	font-size: 16px; 
+	border-style: double; 
+	color: black; 
+	font-family: monospace; 
+	position: relative; 
+	top: 36px; 
+} 
+#head2:activate{
+    paraOn();
+}
+
+#but{
+    position: relative;
+    left: 80px;
+    top: 30px;
+    background: skyblue;
+}
+
+
+#para{ 
+  visibility: hidden;
+	border-style: double; 
+	margin: 20px; 
+	width: 260px; 
+	font-family: monospace, sans-serif;
+	position: relative; 
+	font-size: 13px; 
+	top: 30px; 
+	 
+	} 
+	
+	
+	
+#abrev{ 
+	font-style: italic; 
+	font-family: monospace; 
+} 
+
+#head3{ 
+	width:190px; 
+	font-family: monospace; 
+	position: relative; 
+	top: 40px; 
+	font-size: 16px; 
+	border-style:double; 
+	 
+} 
+
+#but2{
+    position: relative;
+    left: 110px;
+    top: 20px;
+    background: skyblue;
+}
+
+#para2{
+  visibility: hidden;
+  border-style: double; 
+	margin: 20px; 
+	width: 260px; 
+	font-family: monospace, sans-serif; 
+	position: relative; 
+	font-size: 13px; 
+	top: 20px; 
+	 
+}
+
+
+CODE2
+
+
+<div id="div1"align="center">
+		<!--introduction to ICT-->
+        
+      <h2 id="head2" style="">What is ICT?</h2><button id="but" onclick="paraOn()">...</button>
+        
+        <p id="para">ICT stands for<span id="abrev"> "information communication and technology" </span>and is made as a learning strand in senior highschool in san guilliermo national highschool, ICT mainly is teached to students on how to operate and make use of computer devices or other technological devices.</p>
+        
+        </div>
+     <div align="center">
+         
+     	<h3 id="head3">Why a learning portal?</h3><button id="but2" onclick="paraOn2()">...</button>
+     	
+     	<p id="para2">Since almost all students these days have a device to use for school and our PRACTICAL RESEARCH teacher wants us to make a prototype of a leaening portal to base our research on we will be using this learning portal to base our research upon.</p>
+     </div>
+     
+     
+     
+CODE3
+
+
+var para = document.getElementById("para");
+var but = document.getElementById("but");
+var isVis = false;
+
+var para2 = document.getElementById("para2");
+var but2 = document.getElementById("but2");
+var isVis2 = false;
+
+function paraOn(){
+    para.style.visibility ="visible";
+    isVis = true;
+    if (isVis == true){
+        but.style.visibility = "hidden";
+    }
+   } 
+    
+function paraOn2(){
+    para2.style.visibility = "visible";
+    isVis2 = true;
+    if (isVis2 == true){
+        but2.style.visibility = "hidden";
+    }
+}
