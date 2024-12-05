@@ -17,7 +17,7 @@ body{
 /*HEADER TEXTS*/
 h1{
   opacity: 100%;
-  width: 300px;
+
   left: 10px;
 	color:black; 
 	font-family: monospace; 
@@ -40,7 +40,7 @@ h2{
 }
 /*PARAGRAPH TEXTS*/
 p{
-    text-align: left;
+    text-align: center;
     font-family: monospace; 
     font-size: 19px;
     position:relative; 
@@ -121,8 +121,10 @@ span{
 	background: linear-gradient(grey, lightgrey);
 	background-attachment: dynamic;
 	position: absolute;
+	border-style: ridge;
 	border-radius: 30px;
-	width: 100px;
+	width: 100px
+	height: 100px;
 		font-family: monospace;
 	}
 	
